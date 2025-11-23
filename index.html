@@ -4,19 +4,21 @@
     <meta charset="utf-8">
     <title>GBDA228 Website</title> <!-- make sure to change title -->
 
+    <!-- https://alexciupac.github.io/gbda-228-website/ -->
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <style>
       html {
         max-width: 1200px;
         margin: auto;
         font-size: 16px;
       }
-      
-      
+
+
       body {
         background-color: #22242C;
       }
@@ -26,8 +28,72 @@
         font-weight: 400;
         font-style: normal;
         font-size: 5em;
-        color: #70B2B4;
+        color: #C2C2C2;
         margin: 160px;
+      }
+
+      .highlight {
+        color: #70B2B4;
+        font-weight: 600;
+      }
+
+
+      nav {
+        margin: 20px;
+      }
+
+      .nav-container {
+        list-style: none;
+        padding: 0;
+        /* "display: flex" enables a 'flexible' layout model for containers in 1-dimension */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      ul {
+        margin: 0;
+      }
+
+      .nav-links {
+        display: inline-block;
+        margin: 10px 15px;
+      }
+
+      .nav-links:last-child {
+        margin-right: 0;
+      }
+
+      .nav-links a {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.25em;
+        vertical-align: center;
+        color: #C2C2C2;
+        text-decoration: none;
+      }
+
+      .nav-links a:hover {
+        color: #5F9BaB;
+      }
+
+      #nav-brand {
+        font-family: "Righteous", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2em;
+        color: #70B2B4;
+        margin-top: -5px;/* Just to adjust it a little */
+      }
+
+      .teal-bar {
+        height: 4px;
+        background-color: #70B2B4;
+        opacity: 0.6;
+        width: 97%;
+        margin: auto;
+        border-radius: 5px;
       }
     </style>
 
@@ -35,8 +101,24 @@
 
 
   <body>
-    <h1>Simple.</h1>
-    <h1>take the One Step.</h1>
+    <!-- Photo goes here -->
+
+    <!-- Nav bar -->
+    <nav class="nav-container">
+      <div id="nav-brand">One Step</div>
+      <ul>
+        <li class="nav-links"><a href="/">Home</a></li>
+        <li class="nav-links"><a href="/">Dashboard</a></li>
+        <li class="nav-links"><a href="/">Progress</a></li>
+        <li class="nav-links"><a href="/">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="teal-bar"></div>
+
+
+    <!-- Text -->
+    <h1><span class="highlight">Simple.</span><br>take the One Step.</h1>
 
   </body>
 
