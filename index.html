@@ -24,8 +24,11 @@
         background-position: center;
         background-repeat: no-repeat;
         background-color: #22242C;
+        box-sizing: border-box;
       }
 
+      
+      /* All text formats */
       h1 {
         font-family: "Poppins", sans-serif;
         font-weight: 400;
@@ -41,7 +44,16 @@
         font-style: normal;
         font-size: 3em;
         color: #C2C2C2;
+        text-align: center;
         margin: auto auto;
+      }
+      
+      p {
+        font-family: "Quattrocento Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #C2C2C2;
+        text-align: center;
       }
 
       .highlight {
@@ -49,7 +61,8 @@
         font-weight: 600;
       }
 
-
+      
+      /* Below is for nav bar at top */
       nav {
         margin: 20px;
       }
@@ -109,6 +122,46 @@
         margin: auto;
         border-radius: 5px;
       }
+      
+      
+      /* Containters */
+      .container {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        gap: 5%;
+        justify-content: center; 
+        
+      }
+      
+      .grid-item {
+        border: 3px;
+        border-style: solid;
+        background-color: #343638;
+        border-color: #70B2B4;
+        border-radius: 5px;
+      }
+      
+      .grid-item p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1em;
+        color: #C2C2C2;
+        
+        margin: 5%;
+        text-align: center;
+        
+        display: inline;
+        float: right;
+        max-width: 55%;
+      }
+      
+      .grid-item img {
+        display: inline;
+        float: left;
+        width: 25%;
+        margin: 5%;
+      }
     </style>
 
   </head>
@@ -136,6 +189,22 @@
 
     <h3>Simply <span class="highlight">Habit Tracking.</span></h3>
     
+    <p>a simple, effective interface that lets you track with no distractions. all free to use.</p>
+    
+    <div class="container">
+      <div class="grid-item">
+        <img src="web-icon-1.png" alt="Icon of schedule">
+        <p>All your daily tasks in one</p>
+      </div>
+      <div class="grid-item">
+        <img src="web-icon-2.png" alt="Icon of eye">
+        <p>Ease of use, clean layout</p>
+      </div>
+      <div class="grid-item">
+        <img src="web-icon-3.png" alt="Icon of Checkmark">
+        <p>To-Do list, A.I. tool, and more</p>
+      </div>
+    </div>
   </body>
 
 </html>
