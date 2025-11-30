@@ -19,10 +19,6 @@
       }
 
       body {
-        background-image: url("228-img-1.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
         background-color: #22242C;
         box-sizing: border-box;
       }
@@ -123,6 +119,15 @@
         border-radius: 5px;
       }
       
+      /* Hero section (for the image) */
+      #hero {
+        background-image: url("228-img-1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+      }
+      
       
       /* Containters */
       .container {
@@ -145,7 +150,7 @@
         font-family: "Poppins", sans-serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 1.5em;
+        font-size: 1.25em;
         color: #C2C2C2;
         
         margin: 5%;
@@ -168,6 +173,7 @@
 
 
   <body>
+    <section id="hero">
     <!-- Photo goes here -->
 
     <!-- Nav bar -->
@@ -182,11 +188,14 @@
     </nav>
 
     <div class="teal-bar"></div>
-
+      
+    <!-- Hero Text -->
+    <h1><span class="highlight">Simple.</span><br>take the One Step.</h1>
+    </section>
+    
 
     <!-- Text -->
-    <h1><span class="highlight">Simple.</span><br>take the One Step.</h1>
-
+    
     <h3>Simply <span class="highlight">Habit Tracking.</span></h3>
     
     <p>a simple, effective interface that lets you track with no distractions. all free to use.</p>
