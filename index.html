@@ -25,6 +25,18 @@
       }
 
       
+       /* Hero section (for the image) */
+      #hero {
+        background-image: url("228-img-1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 800px;
+        margin: 0 auto;
+      }
+      
+      
       /* All text formats */
       h1 {
         font-family: "Poppins", sans-serif;
@@ -34,7 +46,15 @@
         color: #C2C2C2;
         margin: 160px;
         
-        
+      }
+      
+      h2 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 4em;
+        color: #C2C2C2;
+        margin: 160px;
       }
       
       h3 {
@@ -64,7 +84,7 @@
       
       /* Below is for nav bar at top */
       nav {
-        margin: 20px;
+        margin: 20px 20px 5px 20px;
       }
 
       .nav-container {
@@ -82,7 +102,7 @@
 
       .nav-links {
         display: inline-block;
-        margin: 10px 15px;
+        margin: 10px 25px;
       }
 
       .nav-links:last-child {
@@ -97,12 +117,22 @@
         vertical-align: center;
         color: #C2C2C2;
         text-decoration: none;
+        position: relative;
         
         transition: 0.5s;
       }
 
       .nav-links a:hover {
         color: #5F9BaB;
+      }
+      
+      a.active {
+        
+        color: #5F9BaB;
+        text-decoration: underline;
+        text-decoration-thickness: 5px;
+        text-underline-offset: 37px;
+        
       }
 
       #nav-brand {
@@ -123,17 +153,6 @@
         border-radius: 5px;
       }
       
-      /* Hero section (for the image) */
-      #hero {
-        background-image: url("228-img-1.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: relative;
-        height: 800px;
-        margin: 0 auto;
-      }
-      
       
       /* Containters */
       .container {
@@ -141,7 +160,7 @@
         grid-template-columns: 25% 25% 25%;
         gap: 5%;
         justify-content: center; 
-        margin: 50px 0;
+        margin: 70px 0;
       }
       
       .grid-item {
@@ -190,10 +209,12 @@
     <!-- Photo goes here -->
 
     <!-- Nav bar -->
+      
+      
     <nav class="nav-container">
       <div id="nav-brand">One Step</div>
       <ul>
-        <li class="nav-links"><a href="/">Home</a></li>
+        <li class="nav-links"><a href="/" class="active">Home</a></li>
         <li class="nav-links"><a href="/">Dashboard</a></li>
         <li class="nav-links"><a href="/">Progress</a></li>
         <li class="nav-links"><a href="/">About</a></li>
