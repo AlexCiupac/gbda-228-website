@@ -258,19 +258,39 @@
       }
       
       .contact-form p {
+        color: #9FDCDD;
+        font-family: "Poppins", sans-serif;
+        text-align: left;
+        margin-right: 160px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      
+      .contact-form p:first-child {
+        margin-top: 30px;
+      }
+      
+      .contact-form .contact-icons img {
+        margin: 0px 5px;
+        margin-left: 5px;
+      }
+      
+      .contact-form-icons {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      .contact-form-box {
         width: 330px;
         padding: 5px;
         border: 3px solid #70B2B4;
         border-radius: 6px;
         background-color: #1E1F26;
-        color: #9FDCDD;
-        font-family: "Poppins", sans-serif;
-        text-align: left;
-        margin-right: 160px;
-      }
-      
-      .contact-form p:first-child {
-        margin-top: 30px;
+        margin-left: 0px;
       }
       
     </style>
@@ -316,10 +336,23 @@
         </div>
       </div>
       <div class="contact-form">
-        <p>Name</p>
-        <p>Email</p>
-        <p>Message</p>
-        <p>Submit</p>
+        
+        <div class="contact-form-box">
+        <div class="contact-icons">
+          <img src="profile-1.png" alt="description of image">
+          <p>Name</p>
+        </div>
+        </div>
+        
+        <div class="contact-form-box">
+        <div class="contact-icons">
+          <img src="mail-2.png" alt="description of image">
+          <p>Email</p>
+        </div>
+        </div>
+        
+        <p class="contact-form-box">Message</p>
+        <p class="contact-form-box">Submit</p>
       </div>
     </div>
   </body>
