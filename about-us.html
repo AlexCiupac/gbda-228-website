@@ -221,19 +221,32 @@
       .contact-detail p {
         font-weight: 600;
         text-align: left;
-        margin-left: 60px;
+        margin-left: 100px;
       }
       
       .contact-detail h3 {
-        margin: 5px 40px 40px 60px;
+        margin: 5px 40px 40px 100px;
         text-align: left;
       }
       
       .contact-icons {
-        flex: row;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
         gap: 10px;
+      }
+      
+      .contact-icons img {
+        width: 25px;
+        margin: 15px 10px 15px 100px;
+      }
+      
+      .contact-icons p {
+        margin-left: 0;
+        margin-right: 110px;
+        
       }
       
       .contact-form {
@@ -294,8 +307,12 @@
       <div class="contact-detail">
         <p>any questions or concerns?</p>
         <h3><span class="highlight">Contact</span> us.</h3>
-        <p>thisismyemail@gmail.com</p>
-        <p>123-321-1234</p>
+        <div class="contact-icons">
+          <img src="mail-1.png" alt="mail icon">
+          <p>thisismyemail@gmail.com</p>
+          <img src="phone-1.png" alt="phone icon">
+          <p>123-321-1234</p>
+        </div>
       </div>
       <div class="contact-form">
         <p>Name</p>
