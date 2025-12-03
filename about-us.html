@@ -27,7 +27,7 @@
 
       /* Hero section (for the image) */
       #hero {
-        background-image: url("228-img-2.jpg");
+        background-image: url("228-img-4.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -73,7 +73,7 @@
         font-style: normal;
         color: #C2C2C2;
         text-align: center;
-        margin: 15px 0;
+        margin: 15px 70px;
       }
 
       .highlight {
@@ -203,6 +203,54 @@
         width: 20%;
         margin-left: 10px;
       }
+      
+      
+      /* Contact Section */
+      .contact {
+        background-color: #282A33;
+        height: 450px;
+        padding: 70px 0;
+      }
+      
+      .contact-detail {
+        display: inline-flex;
+        flex-direction: column;
+        float: left;
+      }
+      
+      .contact-detail p {
+        font-weight: 600;
+        text-align: left;
+        margin-left: 60px;
+        
+      }
+      
+      .contact-detail h3 {
+        margin: 20px 60px;
+        text-align: left;
+        
+      }
+      
+      .contact-form {
+        display: inline-flex;
+        flex-direction: column;
+        float: right;
+        gap: 15px;
+      }
+      
+      .contact-form p {
+        padding: 10px;
+        border: 3px solid #70B2B4;
+        border-radius: 6px;
+        background-color: #1E1F26;
+        color: #C2C2C2;
+        font-family: "Poppins", sans-serif;
+      }
+      
+      .contact-form p:first-child {
+        margin-top: 30px;
+      }
+      
     </style>
 
   </head>
@@ -233,23 +281,21 @@
 
 
     <!-- Text -->
+    <p><span class="highlight">One Step </span>is a minimalist habit tracker designed to help you build better routines, one day at a time. We believe that small, consistent actions lead to meaningful change, and our platform makes it easy to stay on track with a clean, modern interface. No clutter, no distractions — just habits that stick. <br><br>
+    Join us in creating a life of intention, one habit at a time. We strive to create a platform that sparks making every moment count. So take everything one step at a time, and you will reach the goals you set out for.</p>
 
-    <h3>Simply <span class="highlight">Habit Tracking.</span></h3>
-
-    <p>a simple, effective interface that lets you track with no distractions. all free to use.</p>
-
-    <div class="container">
-      <div class="grid-item">
-        <img src="web-icon-1.png" alt="Icon of schedule">
-        <p>All your daily tasks in one</p>
+    <div class="contact">
+      <div class="contact-detail">
+        <p>any questions or concerns?</p>
+        <h3><span class="highlight">Contact</span> us.</h3>
+        <p>thisismyemail@gmail.com</p>
+        <p>123-321-1234</p>
       </div>
-      <div class="grid-item">
-        <img src="web-icon-2.png" alt="Icon of eye">
-        <p>Ease of use, clean layout</p>
-      </div>
-      <div class="grid-item">
-        <img src="web-icon-3.png" alt="Icon of Checkmark">
-        <p>To-Do list, A.I. tool, and more</p>
+      <div class="contact-form">
+        <p>Name</p>
+        <p>Email</p>
+        <p>Message</p>
+        <p>Submit</p>
       </div>
     </div>
   </body>
