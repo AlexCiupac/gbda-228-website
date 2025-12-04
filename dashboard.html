@@ -161,143 +161,64 @@
         margin-top: -3px;
 
       }
-
-
-      /* Containters */
-      .container {
-        display: grid;
-        grid-template-columns: 25% 25% 25%;
-        gap: 5%;
-        justify-content: center;
-        margin: 60px 0;
+      
+      
+      /* All Dashboard content */
+      .dashboard {
+        margin: 20px 60px;
+        padding: 20px;
       }
-
-      .grid-item {
-        border: 3px;
-        border-style: solid;
-        border-color: #70B2B4;
-        border-radius: 12px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-      }
-
-      .grid-item p {
+      
+      /* Fonts within the dashboard */
+      .dashboard-font {
+        font-weight: 500;
         font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 1.25em;
         color: #C2C2C2;
-        margin-right: 10px;
-
-        text-align: center;
-        /*margin: 5%;
-        
-        display: inline;
-        float: right;
-        max-width: 55%;*/
-      }
-
-      .grid-item img {
-        /*display: inline;
-        float: left;
-        width: 20%;
-        margin: 7.5%;*/
-        width: 20%;
-        margin-left: 10px;
+        /* Adjust font margins here */
       }
       
-      
-      /* Contact Section */
-      .contact {
-        background-color: #282A33;
-        height: 350px;
-        padding: 50px 0;
+      .current-day {
+        border: 3px solid #9FDCDD;
       }
       
-      .contact-detail {
-        display: inline-flex;
-        flex-direction: column;
-        float: left;
-        width: 35%;
-      }
-      
-      .contact-detail p {
+      .current-day-font {
         font-weight: 600;
-        text-align: left;
-        margin-left: 100px;
-      }
-      
-      .contact-detail h3 {
-        margin: 5px 40px 40px 100px;
-        text-align: left;
-      }
-      
-      .contact-icons {
-        display: inline-flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 10px;
-      }
-      
-      .contact-icons img {
-        width: 25px;
-        margin: 15px 5px 15px 100px;
-      }
-      
-      .contact-icons p {
-        margin-left: 0;
-        margin-right: 50px;
-        
-      }
-      
-      .contact-form {
-        display: inline-flex;
-        flex-direction: column;
-        float: right;
-        gap: 30px;
-      }
-      
-      .contact-form p {
-        color: #9FDCDD;
         font-family: "Poppins", sans-serif;
-        text-align: left;
-        margin-right: 160px;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        color: #70B2B4;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+        text-decoration-thickness: 2px;
       }
       
-      .contact-form .contact-icons img {
-        margin: 0px 5px;
-        margin-left: 5px;
-      }
-      
-      .contact-form-box {
-        width: 330px;
-        padding: 5px;
-        border: 3px solid #70B2B4;
-        border-radius: 6px;
-        margin-left: 0px;
-      }
-      
-      .contact-form-box:first-child {
-        margin-top: 30px;
-      }
-      
-      .submit-button {
-        width: 330px;
-        padding: 5px;
-        border: 3px solid #5F9BAB;
-        background-color: #5F9BAB;
-        border-radius: 6px;
-        margin-left: 0px;
+      .habit-grid {
+        display: grid;
+        grid-template-columns: 150px repeat(7, 1fr) 80px;
+        gap: 10px;
+        align-items: center;
         text-align: center;
-        font-weight: 600;
       }
+      
+      .cell {
+        padding: 5px;
+        margin: 5px;
+        border-radius: 6px;
+        background-color: #282A33;
+      }
+      
+      /* checkmark cell */
+      .cell-y { 
+        background-color: #70B2B4;
+        color: #9FDCDD;
+      }
+      
+      /* X cell */
+      .cell-x {
+        background-color: #1B2222;
+        color: #505858;
+        font-weight: 500;
+        font-family: "Poppins", sans-serif;
+      }
+
       
     </style>
 
@@ -324,46 +245,69 @@
       <!-- Title Text -->
       <h2>Your Dashboard.</h2>
     </section>
-
-    <div class="break"></div>
-
-    <!-- Text -->
-    <p><span class="highlight">One Step </span>is a minimalist habit tracker designed to help you build better routines, one day at a time. We believe that small, consistent actions lead to meaningful change, and our platform makes it easy to stay on track with a clean, modern interface. No clutter, no distractions — just habits that stick. <br><br>
-    Join us in creating a life of intention, one habit at a time. We strive to create a platform that sparks making every moment count. So take everything one step at a time, and you will reach the goals you set out for.</p>
     
-    <div class="break"></div>
+    <section class="dashboard">
+      <div class="habit-grid">
+        
+        <!-- Day Header Row -->
+        <div></div> <!-- Just blank space -->
+        <div class="dashboard-font">Mon</div>
+        <div class="dashboard-font">Tue</div>
+        <div class="current-day-font">&nbsp;Wed&nbsp;</div> <!-- spaces are added for the underline text -->
+        <div class="dashboard-font">Thu</div>
+        <div class="dashboard-font">Fri</div>
+        <div class="dashboard-font">Sat</div>
+        <div class="dashboard-font">Sun</div>
+        <div></div>
 
-    <div class="contact">
-      <div class="contact-detail">
-        <p>any questions or concerns?</p>
-        <h3><span class="highlight">Contact</span> us.</h3>
-        <div class="contact-icons">
-          <img src="mail-1.png" alt="mail icon">
-          <p>thisismyemail@gmail.com</p>
-          <img src="phone-1.png" alt="phone icon">
-          <p>123-321-1234</p>
-        </div>
+        <!-- Meditation -->
+        <div class="dashboard-font">🧘‍♂️ Meditation</div>
+        <div class="cell cell-y">✔</div>
+        <div class="cell cell-x">X</div>
+        <div class="cell cell-y current-day">✔</div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="dashboard-font">2/7</div>
+        
+        <!-- Reading -->
+        <div class="dashboard-font">📖 Reading</div>
+        <div class="cell cell-x">X</div>
+        <div class="cell cell-y">✔</div>
+        <div class="cell cell-y current-day">✔</div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="dashboard-font">2/7</div>
+        
+        <!-- Journaling -->
+        <div class="dashboard-font">✏️ Journal</div>
+        <div class="cell cell-y">✔</div>
+        <div class="cell cell-y">✔</div>
+        <div class="cell cell-y current-day">✔</div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="dashboard-font">3/7</div>
+        
+        <!-- Exercise -->
+        <div class="dashboard-font">💪 Exercise</div>
+        <div class="cell cell-x">X</div>
+        <div class="cell cell-y">✔</div>
+        <div class="cell cell-y current-day">✔</div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="dashboard-font">2/7</div>
+        
       </div>
-      <div class="contact-form">
-        
-        <div class="contact-form-box">
-        <div class="contact-icons">
-          <img src="profile-1.png" alt="description of image">
-          <p>Name</p>
-        </div>
-        </div>
-        
-        <div class="contact-form-box">
-        <div class="contact-icons">
-          <img src="mail-2.png" alt="description of image">
-          <p>Email</p>
-        </div>
-        </div>
-        
-        <p class="contact-form-box">Message<br> <br> <br></p>
-        <p class="submit-button">Submit</p>
-      </div>
-    </div>
+    </section>
+    
+    
   </body>
 
 </html>
