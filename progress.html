@@ -163,69 +163,12 @@
       }
       
       
-      /* All Dashboard content */
-      .dashboard {
-        margin: 20px 60px;
-        padding: 20px;
+      /* All progress content (main) */
+      .main-progress {
+        margin: 20px 120px;
       }
       
-      /* Fonts within the dashboard */
-      .dashboard-font {
-        font-weight: 500;
-        font-family: "Poppins", sans-serif;
-        color: #C2C2C2;
-        /* Adjust font margins here */
-      }
-      
-      .current-day {
-        border: 3px solid #9FDCDD;
-      }
-      
-      .current-day-font {
-        font-weight: 600;
-        font-family: "Poppins", sans-serif;
-        color: #70B2B4;
-        text-decoration: underline;
-        text-underline-offset: 7px;
-        text-decoration-thickness: 2px;
-      }
-      
-      .habit-grid {
-        display: grid;
-        grid-template-columns: 150px repeat(7, 1fr) 80px;
-        gap: 10px;
-        align-items: center;
-        text-align: center;
-      }
-      
-      .cell {
-        padding: 5px;
-        margin: 5px 20px;
-        border-radius: 6px;
-        background-color: #282A33;
-      }
-      
-      /* checkmark cell */
-      .cell-y { 
-        background-color: #70B2B4;
-        color: #9FDCDD;
-      }
-      
-      /* X cell */
-      .cell-x {
-        background-color: #1B2222;
-        color: #505858;
-        font-weight: 500;
-        font-family: "Poppins", sans-serif;
-      }
-      
-      
-      /* This is the section to log completed tasks */
-      .log-tasks {
-        margin: 20px 60px;
-      }
-      
-      .log-habit-row {
+      .main-progress-row {
         display: flex;
         flex-direction: row;
         gap: 20px;
@@ -233,52 +176,63 @@
         align-items: center;
       }
       
-      .log-habit-cell {
-        width: 25%;
-        height: 100px;
-        border-radius: 6px;
-        border: 5px solid #9FDCDD;
-        background-color: #70B2B4;
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: auto 30%;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      .log-habit-name {
-        font-weight: 600;
-        font-family: "Poppins", sans-serif;
-        color: #22242C;
-        letter-spacing: 1.5px;
-        vertical-align: center;
-      }
-      
-      .log-habit-info {
+      /* Fonts in the section */
+      .main-progress-num {
         font-weight: 500;
         font-family: "Poppins", sans-serif;
-        color: #22242C;
-        text-align: center;
-        vertical-align: center;
-      }      
+        color: #9FDCDD;
+        font-size: 4em;
+        margin: 5px;
+      }
       
-      .log-habit-streak {
+      .main-progress-font {
+        font-weight: 500;
+        font-family: "Poppins", sans-serif;
+        color: #70B2B4;
+        font-size: 2em;
+        margin: 5px;
+      }
+      .main-progress-font-2 {
+        font-weight: 600;
+        font-family: "Quattrocento Sans", sans-serif;
+        color: #C2C2C2;
+        font-size: 1.5em;
+        margin: 5px;
+      }
+      
+      /* Different parts of row */
+      .main-streak {
         display: flex;
         flex-direction: row;
         gap: 5px;
         justify-content: center;
         align-items: center;
+        width: 15%;
       }
-      
-      .log-habit-streak img {
-        width: 25px;
+      .main-streak img {
+        width: 100px;
         height: auto;
       }
       
-      .log-item-left {
-        justify-self: left;
+      .main-percent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%
       }
-
+      .main-percent img {
+        width: 300px;
+      }
+      
+      .main-tasks-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 15%
+      }
+      
       
     </style>
 
@@ -294,9 +248,9 @@
         <div id="nav-brand">One Step</div>
         <ul>
           <li class="nav-links"><a href="/">Home</a></li>
-          <li class="nav-links"><a href="/">Dashboard</a></li>
-          <li class="nav-links"><a href="/" class="active">Progress</a></li>
-          <li class="nav-links"><a href="/">About</a></li>
+          <li class="nav-links"><a href="dashboard.html">Dashboard</a></li>
+          <li class="nav-links"><a href="progress.html" class="active">Progress</a></li>
+          <li class="nav-links"><a href="about-us.html">About</a></li>
         </ul>
       </nav>
 
@@ -306,111 +260,22 @@
       <h2>Your Progress.</h2>
     </section>
     
-    <section class="dashboard">
-      <div class="habit-grid">
-        
-        <!-- Day Header Row -->
-        <div></div> <!-- Just blank space -->
-        <div class="dashboard-font">Mon</div>
-        <div class="dashboard-font">Tue</div>
-        <div class="current-day-font">&nbsp;Wed&nbsp;</div> <!-- spaces are added for the underline text -->
-        <div class="dashboard-font">Thu</div>
-        <div class="dashboard-font">Fri</div>
-        <div class="dashboard-font">Sat</div>
-        <div class="dashboard-font">Sun</div>
-        <div></div>
-
-        <!-- Meditation -->
-        <div class="dashboard-font">🧘‍♂️ Meditation</div>
-        <div class="cell cell-y">✔</div>
-        <div class="cell cell-x">X</div>
-        <div class="cell cell-y current-day">✔</div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="dashboard-font">2/7</div>
-        
-        <!-- Reading -->
-        <div class="dashboard-font">📖 Reading</div>
-        <div class="cell cell-x">X</div>
-        <div class="cell cell-y">✔</div>
-        <div class="cell cell-y current-day">✔</div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="dashboard-font">2/7</div>
-        
-        <!-- Journaling -->
-        <div class="dashboard-font">✏️ Journal</div>
-        <div class="cell cell-y">✔</div>
-        <div class="cell cell-y">✔</div>
-        <div class="cell cell-y current-day">✔</div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="dashboard-font">3/7</div>
-        
-        <!-- Exercise -->
-        <div class="dashboard-font">💪 Exercise</div>
-        <div class="cell cell-x">X</div>
-        <div class="cell cell-y">✔</div>
-        <div class="cell cell-y current-day">✔</div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="dashboard-font">2/7</div>
-        
-      </div>
-    </section>
-    
-    <section class="log-tasks">
-      <div class="log-habit-row">
-        <!-- Meditation Cell -->
-        <div class="log-habit-cell">
-          <div class="log-habit-name log-items-left">🧘‍♂️ Meditation</div>
-          <div class="log-habit-streak">
-            <div class="log-habit-info">1</div>
-            <img src="streak-icon-1.png" alt="Streak Icon">
-          </div>
-          <div class="log-habit-info log-items-left">✔Completed</div>
-          <div class="log-habit-info">Undo</div>
+    <section class="main-progress">
+      <div class="main-progress-row">
+        <div class="main-streak">
+          <h3 class="main-progress-num">10</h3>
+          <img src="streak-icon-2.png" alt="Streak Icon">
         </div>
-        <!-- Reading Cell -->
-        <div class="log-habit-cell">
-          <div class="log-habit-name log-items-left">📖 Reading</div>
-          <div class="log-habit-streak">
-            <div class="log-habit-info">2</div>
-            <img src="streak-icon-1.png" alt="Streak Icon">
-          </div>
-          <div class="log-habit-info log-items-left">✔Completed</div>
-          <div class="log-habit-info">Undo</div>
+        <div class="main-percent">
+          <img src="Progress-icon.png" alt="Progress circle icon">
         </div>
-        <!-- Journal Cell -->
-        <div class="log-habit-cell">
-          <div class="log-habit-name log-items-left">✏️ Journal</div>
-          <div class="log-habit-streak">
-            <div class="log-habit-info">3</div>
-            <img src="streak-icon-1.png" alt="Streak Icon">
-          </div>
-          <div class="log-habit-info log-items-left">✔Completed</div>
-          <div class="log-habit-info">Undo</div>
-        </div>
-        <!-- Exercise Cell -->
-        <div class="log-habit-cell">
-          <div class="log-habit-name log-items-left">💪 Exercise</div>
-          <div class="log-habit-streak">
-            <div class="log-habit-info">2</div>
-            <img src="streak-icon-1.png" alt="Streak Icon">
-          </div>
-          <div class="log-habit-info log-items-left">✔Completed</div>
-          <div class="log-habit-info">Undo</div>
+        <div class="main-tasks-left">
+          <h3 class="main-progress-num">0</h3>
+          <h4 class="main-progress-font">Remaining Daily Tasks</h4>
+          <p class="main-progress-font-2">Great job!</p>
+          
         </div>
       </div>
-    
     </section>
     
     
