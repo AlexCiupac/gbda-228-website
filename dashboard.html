@@ -238,7 +238,7 @@
         height: 100px;
         border-radius: 6px;
         border: 3px solid #9FDCDD;
-        background-color: #282A33;
+        background-color: #70B2B4;
         display: grid;
         grid-template-columns: auto auto;
         gap: auto 30%;
@@ -247,8 +247,25 @@
       .log-habit-info {
         font-weight: 600;
         font-family: "Poppins", sans-serif;
-        color: #C2C2C2;
-        font-size: 1.5em;
+        color: #22242C;
+        letter-spacing: 1.5px;
+      }
+      
+      .log-habit-streak {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .log-habit-streak img {
+        width: 25px;
+        height: auto;
+      }
+      
+      .log-habit-streak-text {
+        
       }
 
       
@@ -343,7 +360,10 @@
       <div class="log-habit-row">
         <div class="log-habit-cell">
           <div class="log-habit-info">🧘‍♂️ Meditation</div>
-          <div class="log-habit-info">1 streak</div>
+          <div class="log-habit-streak">
+            <div class="log-habit-info">1</div>
+            <img src="streak-icon-1.png" alt="Streak Icon">
+          </div>
           <div class="log-habit-info">✔Completed</div>
           <div class="log-habit-info">Undo</div>
         </div>
