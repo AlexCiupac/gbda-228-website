@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-ca">
   <head>
     <meta charset="utf-8">
@@ -18,11 +18,26 @@
         font-size: 16px;
       }
 
-
       body {
         background-color: #22242C;
+        box-sizing: border-box;
+        margin: 0;
       }
 
+
+      /* Hero section (for the image) */
+      #hero {
+        background-image: url("228-img-1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 800px;
+        margin: 0 auto;
+      }
+
+
+      /* All text formats */
       h1 {
         font-family: "Poppins", sans-serif;
         font-weight: 400;
@@ -30,6 +45,35 @@
         font-size: 5em;
         color: #C2C2C2;
         margin: 160px;
+
+      }
+
+      h2 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 4em;
+        color: #C2C2C2;
+        margin: 160px 60px;
+      }
+
+      h3 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3em;
+        color: #C2C2C2;
+        text-align: center;
+        margin: 20px auto;
+      }
+
+      p {
+        font-family: "Quattrocento Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #C2C2C2;
+        text-align: center;
+        margin: 15px 0;
       }
 
       .highlight {
@@ -38,8 +82,9 @@
       }
 
 
+      /* Below is for nav bar at top */
       nav {
-        margin: 20px;
+        margin: 0px 20px 0px 20px;
       }
 
       .nav-container {
@@ -57,11 +102,11 @@
 
       .nav-links {
         display: inline-block;
-        margin: 10px 15px;
+        margin: 10px 25px 0 25px;
       }
 
       .nav-links:last-child {
-        margin-right: 0;
+        margin-right: 25px;
       }
 
       .nav-links a {
@@ -72,10 +117,23 @@
         vertical-align: center;
         color: #C2C2C2;
         text-decoration: none;
+        position: relative;
+
+        padding: 0 10px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+
+        transition: 0.5s;
       }
 
       .nav-links a:hover {
         color: #5F9BaB;
+      }
+
+      a.active {
+        color: #5F9BaB;
+        border-bottom: 5px solid #5F9BaB;
+        display: inline-block;
       }
 
       #nav-brand {
@@ -84,7 +142,8 @@
         font-style: normal;
         font-size: 2em;
         color: #70B2B4;
-        margin-top: -5px;/* Just to adjust it a little */
+        margin-top: -5px;
+        /* Just to adjust it a little */
       }
 
       .teal-bar {
@@ -94,6 +153,56 @@
         width: 97%;
         margin: auto;
         border-radius: 5px;
+        margin-top: -3px;
+
+      }
+
+
+      /* Containters */
+      .container {
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        gap: 5%;
+        justify-content: center;
+        margin: 60px 0;
+      }
+
+      .grid-item {
+        border: 3px;
+        border-style: solid;
+        border-color: #70B2B4;
+        border-radius: 12px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .grid-item p {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.25em;
+        color: #C2C2C2;
+        margin-right: 10px;
+
+        text-align: center;
+        /*margin: 5%;
+        
+        display: inline;
+        float: right;
+        max-width: 55%;*/
+      }
+
+      .grid-item img {
+        /*display: inline;
+        float: left;
+        width: 20%;
+        margin: 7.5%;*/
+        width: 20%;
+        height: auto;
+        margin-left: 10px;
       }
     </style>
 
@@ -101,25 +210,49 @@
 
 
   <body>
-    <!-- Photo goes here -->
+    <section id="hero">
+      <!-- Photo goes here -->
 
-    <!-- Nav bar -->
-    <nav class="nav-container">
-      <div id="nav-brand">One Step</div>
-      <ul>
-        <li class="nav-links"><a href="/">Home</a></li>
-        <li class="nav-links"><a href="/">Dashboard</a></li>
-        <li class="nav-links"><a href="/">Progress</a></li>
-        <li class="nav-links"><a href="/">About</a></li>
-      </ul>
-    </nav>
+      <!-- Nav bar -->
 
-    <div class="teal-bar"></div>
+
+      <nav class="nav-container">
+        <div id="nav-brand">One Step</div>
+        <ul>
+          <li class="nav-links"><a href="home.html" class="active">Home</a></li>
+          <li class="nav-links"><a href="dashboard.html">Dashboard</a></li>
+          <li class="nav-links"><a href="progress.html">Progress</a></li>
+          <li class="nav-links"><a href="about-us.html">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="teal-bar"></div>
+
+      <!-- Hero Text -->
+      <h1><span class="highlight">Simple.</span><br>take the One Step.</h1>
+    </section>
 
 
     <!-- Text -->
-    <h1><span class="highlight">Simple.</span><br>take the One Step.</h1>
 
+    <h3>Simply <span class="highlight">Habit Tracking.</span></h3>
+
+    <p>a simple, effective interface that lets you track with no distractions. all free to use.</p>
+
+    <div class="container">
+      <div class="grid-item">
+        <img src="web-icon-1.png" alt="Icon of schedule">
+        <p>All your daily tasks in one</p>
+      </div>
+      <div class="grid-item">
+        <img src="web-icon-2.png" alt="Icon of eye">
+        <p>Ease of use, clean layout</p>
+      </div>
+      <div class="grid-item">
+        <img src="web-icon-3.png" alt="Icon of Checkmark">
+        <p>To-Do list, A.I. tool, and more</p>
+      </div>
+    </div>
   </body>
 
 </html>
