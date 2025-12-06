@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>GBDA228 Website</title> <!-- make sure to change title -->
 
+    <!-- Note I've created a home html that is an exact replica of the index html
+    <!-- Made by Alex Ciupac #21157236 on Dec. 5th 2025
+
+    <!-- Website link -->
     <!-- https://alexciupac.github.io/gbda-228-website/ -->
 
     <!-- Google Fonts -->
@@ -156,7 +160,75 @@
         margin-top: -3px;
 
       }
+      
+      /* Footer */
+      .site-footer {
+        background-color: #1E1F26;
+        color: #C2C2C2;
+        padding: 40px 20px;
+        margin-top: 60px;
+      }
+      
+      .footer-content {
+        display: flex;
+        justify-content: space-between; /* adds a space between content */
+        flex-wrap: wrap; /* content goes to next line */
+        margin: auto;
+        font-family: "Poppins", sans-serif;
+      }
+      
+      .footer-brand {
+        margin-left: 20px;
+      }
+      
+      .footer-brand h3 {
+        font-family: "Righteous", sans-serif;
+        color: #70B2B4;
+        margin-bottom: 10px;
+      }
+      
+      .footer-brand p {
+        font-family: "Poppins", sans-serif;
+      }
+      
+      .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .footer-links a {
+        color: #C2C2C2;
+        text-decoration: none;
+        transition: color 0.5s; /* Transistions colour over period of time */
+      }
+      .footer-links a:hover {
+        color: #70B2B4;
+      }
+      
+      .footer-contact {
+        margin-right: 20px;
+      }
+      .footer-contact p {
+        font-family: "Poppins", sans-serif;
+        margin: 5px 0;
+      }
+      
+      .footer-contact a {
+        font-family: "Poppins", sans-serif;
+        color: #70B2B4;
+        text-decoration: none;
+      }
+      
+      .footer-bottom {
+        text-align: center;
+        margin-top: 30px;
+        border-top: 1px solid rgba(112, 178, 180, 0.3);
+        padding-top: 15px;
+        font-size: 0.9em;
+        color: #9FDCDD;
+      }
 
+      
 
       /* Containters */
       .container {
@@ -188,18 +260,9 @@
         margin-right: 10px;
 
         text-align: center;
-        /*margin: 5%;
-        
-        display: inline;
-        float: right;
-        max-width: 55%;*/
       }
 
       .grid-item img {
-        /*display: inline;
-        float: left;
-        width: 20%;
-        margin: 7.5%;*/
         width: 20%;
         height: auto;
         margin-left: 10px;
@@ -219,9 +282,9 @@
       <nav class="nav-container">
         <div id="nav-brand">One Step</div>
         <ul>
-          <li class="nav-links"><a href="home.html" class="active">Home</a></li>
+          <li class="nav-links"><a href="/" class="active">Home</a></li>
           <li class="nav-links"><a href="dashboard.html">Dashboard</a></li>
-          <li class="nav-links"><a href="progress.html">Progress</a></li>
+          <li class="nav-links"><a href="/">Progress</a></li>
           <li class="nav-links"><a href="about-us.html">About</a></li>
         </ul>
       </nav>
@@ -253,6 +316,32 @@
         <p>To-Do list, A.I. tool, and more</p>
       </div>
     </div>
+    
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>One Step</h3>
+          <p>Take everything one step at a time.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="home.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="progress.html">Progress</a>
+          <a href="about-us.html">About</a>
+        </div>
+
+        <div class="footer-contact">
+          <p>Email: <a href="mailto:aciupac@uwaterloo.ca">aciupac@uwaterloo.ca</a></p>
+          <p>Phone: <a href="tel:1233211234">123-321-1234</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 One Step. All rights reserved.</p>
+      </div>
+    </footer>
+
   </body>
 
 </html>
