@@ -81,7 +81,7 @@
         color: #70B2B4;
         font-weight: 600;
       }
-      
+
       .break {
         height: 60px;
       }
@@ -161,8 +161,8 @@
         margin-top: -3px;
 
       }
-      
-      
+
+
       /* Footer */
       .site-footer {
         background-color: #1E1F26;
@@ -170,57 +170,63 @@
         padding: 40px 20px;
         margin-top: 60px;
       }
-      
+
       .footer-content {
         display: flex;
-        justify-content: space-between; /* adds a space between content */
-        flex-wrap: wrap; /* content goes to next line */
+        justify-content: space-between;
+        /* adds a space between content */
+        flex-wrap: wrap;
+        /* content goes to next line */
         margin: auto;
         font-family: "Poppins", sans-serif;
       }
-      
+
       .footer-brand {
         margin-left: 20px;
       }
-      
+
       .footer-brand h3 {
         font-family: "Righteous", sans-serif;
         color: #70B2B4;
         margin-bottom: 10px;
       }
-      
+
       .footer-brand p {
         font-family: "Poppins", sans-serif;
       }
-      
+
       .footer-links {
         display: flex;
         flex-direction: column;
         gap: 8px;
       }
+
       .footer-links a {
         color: #C2C2C2;
         text-decoration: none;
-        transition: color 0.5s; /* Transistions colour over period of time */
+        transition: color 0.5s;
+        /* Transistions colour over period of time */
       }
+
       .footer-links a:hover {
         color: #70B2B4;
       }
-      
+
       .footer-contact {
         margin-right: 20px;
       }
+
       .footer-contact p {
         font-family: "Poppins", sans-serif;
         margin: 5px 0;
       }
-      
+
       .footer-contact a {
         font-family: "Poppins", sans-serif;
         color: #70B2B4;
         text-decoration: none;
       }
-      
+
       .footer-bottom {
         text-align: center;
         margin-top: 30px;
@@ -229,13 +235,13 @@
         font-size: 0.9em;
         color: #9FDCDD;
       }
-      
-      
+
+
       /* All progress content (main) */
       .main-progress {
         margin: 20px 120px;
       }
-      
+
       .main-progress-row {
         display: flex;
         flex-direction: row;
@@ -243,7 +249,7 @@
         justify-content: center;
         align-items: center;
       }
-      
+
       /* Fonts in the section */
       .main-progress-num {
         font-weight: 500;
@@ -253,7 +259,7 @@
         margin: 15px;
         line-height: 50px;
       }
-      
+
       .main-progress-font {
         font-weight: 500;
         font-family: "Poppins", sans-serif;
@@ -262,6 +268,7 @@
         margin: 5px;
         line-height: 30px;
       }
+
       .main-progress-font-2 {
         font-weight: 600;
         font-family: "Quattrocento Sans", sans-serif;
@@ -269,7 +276,7 @@
         font-size: 1.5em;
         margin: 5px;
       }
-      
+
       /* Different parts of row */
       .main-streak {
         display: flex;
@@ -279,11 +286,12 @@
         align-items: center;
         width: 15%;
       }
+
       .main-streak img {
         width: 90px;
         height: auto;
       }
-      
+
       .main-percent {
         display: flex;
         flex-direction: column;
@@ -291,10 +299,11 @@
         align-items: center;
         width: 60%
       }
+
       .main-percent img {
         width: 350px;
       }
-      
+
       .main-tasks-left {
         display: flex;
         flex-direction: column;
@@ -302,13 +311,13 @@
         align-items: center;
         width: 15%;
       }
-      
-      
+
+
       /* Progress grid */
       .habit-progress {
         margin: 120px 20px;
       }
-      
+
       .habit-progress-row {
         margin: auto;
         display: grid;
@@ -317,7 +326,7 @@
         justify-content: center;
         align-items: center;
       }
-      
+
       .habit-progress-box {
         background-color: #282A33;
         display: flex;
@@ -330,7 +339,7 @@
         border: 3px solid #70B2B4;
         border-radius: 10px;
       }
-      
+
       .habit-progress-top {
         height: 15%;
         display: grid;
@@ -340,9 +349,11 @@
         width: 100%;
         margin-top: -15px;
       }
+
       .habit-progress-title {
         width: 70%;
       }
+
       /* taken from my dashboard */
       .log-habit-streak {
         display: flex;
@@ -351,11 +362,12 @@
         justify-content: center;
         align-items: center;
       }
-      
+
       .log-habit-streak img {
         width: 40px;
         height: auto;
       }
+
       .log-habit-streak p {
         font-weight: 500;
         font-family: "Poppins", sans-serif;
@@ -363,7 +375,7 @@
         color: #9FDCDD;
         margin: 0;
       }
-      
+
       .habit-progress-grid {
         height: 80%;
         width: 100%;
@@ -373,21 +385,23 @@
         align-items: center;
         text-align: center;
       }
+
       .habit-cell {
         height: 40px;
         border-radius: 4px;
       }
+
       .cell-y {
         background-color: #9FDCDD;
       }
+
       .cell-x {
         background-color: #22242C;
       }
-      
+
       .push-left {
-        justify-self: left; 
+        justify-self: left;
       }
-      
     </style>
 
   </head>
@@ -413,7 +427,7 @@
       <!-- Title Text -->
       <h2>Your Progress.</h2>
     </section>
-    
+
     <section class="main-progress">
       <div class="main-progress-row">
         <div class="main-streak">
@@ -430,11 +444,11 @@
           <h3 class="main-progress-num">0</h3>
           <!--<h4 class="main-progress-font">Remaining Daily Tasks</h4> -->
           <p class="main-progress-font-2">Remaining Daily Tasks</p>
-          
+
         </div>
       </div>
     </section>
-    
+
     <section class="habit-progress">
       <div class="habit-progress-row">
         <div class="habit-progress-box">
@@ -453,7 +467,7 @@
             <div class="habit-cell cell-x">&nbsp;</div>
             <div class="habit-cell cell-x">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
-            
+
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-x">&nbsp;</div>
@@ -461,7 +475,7 @@
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-x">&nbsp;</div>
-            
+
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-x">&nbsp;</div>
@@ -469,13 +483,13 @@
             <div class="habit-cell cell-x">&nbsp;</div>
             <div class="habit-cell cell-x">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
-            
+
             <div class="habit-cell cell-x">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
           </div>
         </div>
-        
-        
+
+
         <div class="habit-progress-box">
           <div class="habit-progress-top">
             <h4 class="habit-progress-title main-progress-font push-left">📖Reading</h4>
@@ -492,7 +506,7 @@
             <div class="habit-cell cell-x">&nbsp;</div>
             <div class="habit-cell cell-x">&nbsp;</div>
             <div class="habit-cell cell-x">&nbsp;</div>
-            
+
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-x">&nbsp;</div>
             <div class="habit-cell cell-x">&nbsp;</div>
@@ -500,7 +514,7 @@
             <div class="habit-cell cell-x">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-x">&nbsp;</div>
-            
+
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
@@ -508,13 +522,13 @@
             <div class="habit-cell cell-x">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-x">&nbsp;</div>
-            
+
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
           </div>
         </div>
-        
-        
+
+
         <div class="habit-progress-box">
           <div class="habit-progress-top">
             <h4 class="habit-progress-title main-progress-font push-left">✏️Journal</h4>
@@ -531,7 +545,7 @@
             <div class="habit-cell cell-x">&nbsp;</div>
             <div class="habit-cell cell-x">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
-            
+
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
@@ -539,7 +553,7 @@
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-x">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
-            
+
             <div class="habit-cell cell-x">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-x">&nbsp;</div>
@@ -547,13 +561,13 @@
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
-            
+
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
           </div>
         </div>
-        
-        
+
+
         <div class="habit-progress-box">
           <div class="habit-progress-top">
             <h4 class="habit-progress-title main-progress-font push-left">💪Exercise</h4>
@@ -570,7 +584,7 @@
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
-            
+
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
@@ -578,7 +592,7 @@
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
             <div class="habit-cell cell-x">&nbsp;</div>
-            
+
             <div class="habit-cell cell-x">&nbsp;</div>
             <div class="habit-cell cell-x">&nbsp;</div>
             <div class="habit-cell cell-x">&nbsp;</div>
@@ -586,14 +600,14 @@
             <div class="habit-cell cell-x">&nbsp;</div>
             <div class="habit-cell cell-x">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
-            
+
             <div class="habit-cell cell-x">&nbsp;</div>
             <div class="habit-cell cell-y">&nbsp;</div>
           </div>
         </div>
       </div>
     </section>
-    
+
     <footer class="site-footer">
       <div class="footer-content">
         <div class="footer-brand">
@@ -618,7 +632,7 @@
         <p>&copy; 2025 One Step. All rights reserved.</p>
       </div>
     </footer>
-    
+
   </body>
 
 </html>

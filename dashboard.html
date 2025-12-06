@@ -81,7 +81,7 @@
         color: #70B2B4;
         font-weight: 600;
       }
-      
+
       .break {
         height: 60px;
       }
@@ -161,8 +161,8 @@
         margin-top: -3px;
 
       }
-      
-      
+
+
       /* Footer */
       .site-footer {
         background-color: #1E1F26;
@@ -170,57 +170,63 @@
         padding: 40px 20px;
         margin-top: 60px;
       }
-      
+
       .footer-content {
         display: flex;
-        justify-content: space-between; /* adds a space between content */
-        flex-wrap: wrap; /* content goes to next line */
+        justify-content: space-between;
+        /* adds a space between content */
+        flex-wrap: wrap;
+        /* content goes to next line */
         margin: auto;
         font-family: "Poppins", sans-serif;
       }
-      
+
       .footer-brand {
         margin-left: 20px;
       }
-      
+
       .footer-brand h3 {
         font-family: "Righteous", sans-serif;
         color: #70B2B4;
         margin-bottom: 10px;
       }
-      
+
       .footer-brand p {
         font-family: "Poppins", sans-serif;
       }
-      
+
       .footer-links {
         display: flex;
         flex-direction: column;
         gap: 8px;
       }
+
       .footer-links a {
         color: #C2C2C2;
         text-decoration: none;
-        transition: color 0.5s; /* Transistions colour over period of time */
+        transition: color 0.5s;
+        /* Transistions colour over period of time */
       }
+
       .footer-links a:hover {
         color: #70B2B4;
       }
-      
+
       .footer-contact {
         margin-right: 20px;
       }
+
       .footer-contact p {
         font-family: "Poppins", sans-serif;
         margin: 5px 0;
       }
-      
+
       .footer-contact a {
         font-family: "Poppins", sans-serif;
         color: #70B2B4;
         text-decoration: none;
       }
-      
+
       .footer-bottom {
         text-align: center;
         margin-top: 30px;
@@ -229,14 +235,14 @@
         font-size: 0.9em;
         color: #9FDCDD;
       }
-      
-      
+
+
       /* All Dashboard content */
       .dashboard {
         margin: 20px 60px;
         padding: 20px;
       }
-      
+
       /* Fonts within the dashboard */
       .dashboard-font {
         font-weight: 500;
@@ -244,11 +250,11 @@
         color: #C2C2C2;
         /* Adjust font margins here */
       }
-      
+
       .current-day {
         border: 3px solid #9FDCDD;
       }
-      
+
       .current-day-font {
         font-weight: 600;
         font-family: "Poppins", sans-serif;
@@ -257,7 +263,7 @@
         text-underline-offset: 7px;
         text-decoration-thickness: 2px;
       }
-      
+
       .habit-grid {
         display: grid;
         grid-template-columns: 150px repeat(7, 1fr) 80px;
@@ -265,20 +271,20 @@
         align-items: center;
         text-align: center;
       }
-      
+
       .cell {
         padding: 5px;
         margin: 5px 20px;
         border-radius: 6px;
         background-color: #282A33;
       }
-      
+
       /* checkmark cell */
-      .cell-y { 
+      .cell-y {
         background-color: #70B2B4;
         color: #9FDCDD;
       }
-      
+
       /* X cell */
       .cell-x {
         background-color: #1B2222;
@@ -286,13 +292,13 @@
         font-weight: 500;
         font-family: "Poppins", sans-serif;
       }
-      
-      
+
+
       /* This is the section to log completed tasks */
       .log-tasks {
         margin: 20px 60px;
       }
-      
+
       .log-habit-row {
         display: flex;
         flex-direction: row;
@@ -300,7 +306,7 @@
         justify-content: center;
         align-items: center;
       }
-      
+
       .log-habit-cell {
         width: 25%;
         height: 100px;
@@ -313,7 +319,7 @@
         justify-content: center;
         align-items: center;
       }
-      
+
       .log-habit-name {
         font-weight: 600;
         font-family: "Poppins", sans-serif;
@@ -321,15 +327,15 @@
         letter-spacing: 1.5px;
         vertical-align: center;
       }
-      
+
       .log-habit-info {
         font-weight: 500;
         font-family: "Poppins", sans-serif;
         color: #22242C;
         text-align: center;
         vertical-align: center;
-      }      
-      
+      }
+
       .log-habit-streak {
         display: flex;
         flex-direction: row;
@@ -337,17 +343,15 @@
         justify-content: center;
         align-items: center;
       }
-      
+
       .log-habit-streak img {
         width: 25px;
         height: auto;
       }
-      
+
       .log-item-left {
         justify-self: left;
       }
-
-      
     </style>
 
   </head>
@@ -373,10 +377,10 @@
       <!-- Title Text -->
       <h2>Your Dashboard.</h2>
     </section>
-    
+
     <section class="dashboard">
       <div class="habit-grid">
-        
+
         <!-- Day Header Row -->
         <div></div> <!-- Just blank space -->
         <div class="dashboard-font">Mon</div>
@@ -398,7 +402,7 @@
         <div class="cell"></div>
         <div class="cell"></div>
         <div class="dashboard-font">2/7</div>
-        
+
         <!-- Reading -->
         <div class="dashboard-font">📖 Reading</div>
         <div class="cell cell-x">X</div>
@@ -409,7 +413,7 @@
         <div class="cell"></div>
         <div class="cell"></div>
         <div class="dashboard-font">2/7</div>
-        
+
         <!-- Journaling -->
         <div class="dashboard-font">✏️ Journal</div>
         <div class="cell cell-y">✔</div>
@@ -420,7 +424,7 @@
         <div class="cell"></div>
         <div class="cell"></div>
         <div class="dashboard-font">3/7</div>
-        
+
         <!-- Exercise -->
         <div class="dashboard-font">💪 Exercise</div>
         <div class="cell cell-x">X</div>
@@ -431,10 +435,10 @@
         <div class="cell"></div>
         <div class="cell"></div>
         <div class="dashboard-font">2/7</div>
-        
+
       </div>
     </section>
-    
+
     <section class="log-tasks">
       <div class="log-habit-row">
         <!-- Meditation Cell -->
@@ -478,9 +482,9 @@
           <div class="log-habit-info">Undo</div>
         </div>
       </div>
-    
+
     </section>
-    
+
     <footer class="site-footer">
       <div class="footer-content">
         <div class="footer-brand">
@@ -505,7 +509,7 @@
         <p>&copy; 2025 One Step. All rights reserved.</p>
       </div>
     </footer>
-    
+
   </body>
 
 </html>
